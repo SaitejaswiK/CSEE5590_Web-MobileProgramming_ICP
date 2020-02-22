@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+</head>
+<body>
+ <h1 align="center"> Calculator!!!</h1><br><br><br><br>
+<div id="calculator" >
+
+  <div id="display">{{mainText}}</div>
+  <div id="keys">
+    <button (click)='keyPress(1)'>1</button>
+    <button (click)='keyPress(2)'>2</button>
+    <button (click)='keyPress(3)'>3</button>
+    <button (click)='keyPress("/")'>/</button>
+    <button (click)='keyPress(4)'>4</button>
+    <button (click)='keyPress(5)'>5</button>
+    <button (click)='keyPress(6)'>6</button>
+    <button (click)='keyPress("*")'>*</button>
+    <button (click)='keyPress(7)'>7</button>
+    <button (click)='keyPress(8)'>8</button>
+    <button (click)='keyPress(9)'>9</button>
+    <button (click)='keyPress("+")'>+</button>
+    <button (click)='keyPress(0)'>0</button>
+    <button (click)='result()'>=</button>
+    <button (click)='keyPress("-")'>-</button>
+
+    <button  (click)="allClear()">C</button>
+  </div>
+</div>
+
+</body>
+</html>
